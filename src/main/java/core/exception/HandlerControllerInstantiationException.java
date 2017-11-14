@@ -1,7 +1,6 @@
 package core.exception;
 
 public class HandlerControllerInstantiationException implements HandlerRuntimeException<Object, Class<?>> {
-
 	@Override
 	public Object handling(Class<?> param) {
 		try {
@@ -10,5 +9,4 @@ public class HandlerControllerInstantiationException implements HandlerRuntimeEx
 			throw new ControllerInstantiationException();
 		}
 	}
-
 }
